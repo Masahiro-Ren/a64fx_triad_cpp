@@ -2,7 +2,7 @@
  stream triad implemented in cpp
 
 # notes
-1. Using `-Krestp=all` or `-Krestp=arg` option make compiler consider pointers are decorated with "restrict" as in C99. Otherwise the compiler cannot apply vectorization and `zfill` to the kernel.
+1. Using `-Krestp=all` or `-Krestp=arg` option to make compiler consider pointers are decorated with "restrict" as in C99. Otherwise the compiler cannot apply vectorization and `zfill` to the kernel.
 2. Without `zfill`, the kernel can only achieve 620 GB/s Best rate. 
 3. Some Fujitsu environment variables should also be exported as shown in job.sh
 # result
